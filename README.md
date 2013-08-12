@@ -17,8 +17,7 @@ router.Static("/static/", "./assets")
 router.Register("/person/([0-9]+)$", "GET", func (matches []string, response http.ResponseWriter, request *http.Request){
         context := make(map[string][interface{}])
 
-        user_name := matches[0]
-        context["user"] =
+        context["user"] = matches[0]
         view.Render("index.html", context)
 })
 
