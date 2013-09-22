@@ -24,3 +24,7 @@ router.Register("/person/([0-9]+)$", "GET", func (matches []string, response htt
 
 echidna.Activate(router)
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gabrielfalcao/echidna/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
